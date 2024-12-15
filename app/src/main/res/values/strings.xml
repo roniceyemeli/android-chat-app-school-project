@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ChatAppProject</string>
+    <string name="enter_message">Enter message</string>
+    <string name="username">username</string>
+    <string name="backIcon">backIcon</string>
+    <string name="userAvatar">userAvatar</string>
+    <string name="sendIcon">sendIcon</string>
+</resources>

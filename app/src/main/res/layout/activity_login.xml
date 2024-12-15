@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login_btn_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="30dp"
+        android:src="@drawable/chat_logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/login_btn_container"
+        android:layout_margin="20dp"
+        >
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/login_mail"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+
+
+            />
+
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_mail"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_btn"
+            android:text="Sign-in"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/redirect_register_text"
+            android:text="Sign-up"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="sans-serif-medium"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+</RelativeLayout>
